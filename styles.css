@@ -15,12 +15,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #403331;
+    background-color: #1c1c1c;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     height: 100vh; width: 80%;
     display: flex;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin: 10px 0px;
 }
 
 .left,
@@ -34,20 +40,106 @@ body {
     width: 40%;
 }
 
-.right {
-    width: 60%;
-    background-color: aliceblue;
+.left footer {
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .left img {
-    width: 100%; 
+    height: 100%; 
 }
 
 .odin-hero {
     display: flex;
-    height: 300px; width: 100%;
-    background-color: grey;
-    opacity: .5;
+    height: 150px; width: 100%;
+    /* rbga instead of opacity prevents inheriting opacity to logo and h1 */
+    background-color: rgba(0, 0, 0, .5); 
     position: absolute;
-    top: 10%;
+    top: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin-hero img {
+    height: 80%;
+}
+
+.odin-hero h1 {
+    font-family: Norse-Bold;
+    font-size: 100px;
+    color: white;
+}
+
+.right {
+    width: 60%;
+    background-color: #faffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.right > div {
+    height: 33%;
+    padding: 10px 50px;
+}
+
+.header:first-child {
+    padding-top: 15%;
+    padding-right: 20%;
+}
+
+.main {
+    height: 20%;
+    background-color: white;
+    box-shadow: 0 2px 2px lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form {
+    display: flex;
+    gap: 32px;
+}
+
+.form-left,
+.form-right {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+form input {
+    height: 30px; width: 250px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    appearance: none;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #596D48;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.footer button {
+    margin-top: 30px;
+    background-color: #596D48;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    border: 1px solid #596D48;
+    border-radius: 6px;
+    padding: 12px 30px;
+    margin-bottom: 30px;
 }
