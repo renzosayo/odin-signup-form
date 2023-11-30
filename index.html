@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odin Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="left">
+        <img src="./images/background.png" alt="Picture of ferns" id="background">
+        <div class="odin-hero">
+            <img src="./images/odin-lined.png" alt="Logo of The Odin Project">
+            <h2 class="odin">ODIN</h2>
+        </div>
+        <footer class="credits">
+            Photo by <em class="underline">Halie West</em> on <em class="underline">Unsplash</em>
+        </footer>
+    </div>
+    <div class="right">
+        <div class="header">
+            <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em class="italic">now</em> to get started.</h3>
+            <h3>You <em class="italic">know</em> you want to.</h3>
+        </div>
+            <div class="main">
+            <h3>Let's do this!</h3>
+            <form id="signup-form">
+                <div class="form-left">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-right">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name">
+
+                    <label for="phone">Phone</label>
+                    <input type="number" name="phone" id="phone">
+
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-pasword" id="confirm-password">
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <button type="submit" form="signup-form">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>
