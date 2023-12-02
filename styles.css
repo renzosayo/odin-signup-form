@@ -109,6 +109,7 @@ form > div {
     display: flex;
     flex-direction: column;
     margin-right: 32px;
+    position: relative;
 }
 
 form label {
@@ -142,6 +143,47 @@ form input:focus {
     box-shadow: 1px 1px 2px lightgrey;
 }
 
+form input:user-invalid {
+    border: 1px solid red;
+}
+
+form input:user-invalid + span::after {
+    content: "×";
+    display: inline-block;
+    color: red;
+    height: 1rem; width: 1rem;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+form > div > .error {
+    font-size: 10px;
+    color: red;
+    position: absolute;
+    bottom: 4px;
+}
+
+.hide {
+    display: none;
+}
+
+form input:user-valid {
+    border: 1px solid green;
+}
+
+form input:user-valid + span::after {
+    content: "✔";
+    display: inline-block;
+    color: green;
+    height: 1rem; width: 1rem;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
 .footer a {
     color: #596D48;
     font-weight: 800;
@@ -159,3 +201,4 @@ form input:focus {
     padding: 12px 30px;
     margin-bottom: 30px;
 }
+
